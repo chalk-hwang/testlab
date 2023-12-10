@@ -3,11 +3,11 @@ kind: Application
 metadata:
   name: nextndns-exporter
   finalizers:
-    - resources-finalizer.argocd.argoproj.io
+  - resources-finalizer.argocd.argoproj.io
 spec:
   project: monitoring
   source:
-    repoURL: 'https://github.com/gruberdev/homelab.git'
+    repoURL: 'https://github.com/chalk-hwang/testlab.git'
     path: apps/monitoring/nextdns
     targetRevision: main
   destination:

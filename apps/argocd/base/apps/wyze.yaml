@@ -13,7 +13,7 @@ metadata:
 spec:
   project: apps
   source:
-    repoURL: 'https://github.com/gruberdev/homelab.git'
+    repoURL: 'https://github.com/chalk-hwang/testlab.git'
     path: apps/home/wyze
     targetRevision: main
   destination:

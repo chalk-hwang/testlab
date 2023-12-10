@@ -3,11 +3,11 @@ kind: Application
 metadata:
   name: milvus-operator
   finalizers:
-    - resources-finalizer.argocd.argoproj.io
+  - resources-finalizer.argocd.argoproj.io
 spec:
   project: mlops
   source:
-    repoURL: 'https://github.com/gruberdev/homelab.git'
+    repoURL: 'https://github.com/chalk-hwang/testlab.git'
     path: apps/services/mlops/milvus
     targetRevision: main
   destination:
@@ -29,18 +29,18 @@ spec:
     - Prune=true
     - ServerSideApply=true
   info:
-    - name: 'Github Repository:'
-      value: >-
-        https://github.com/zilliztech/milvus-operator
-    - name: 'Manifests example folder:'
-      value: >-
-        https://github.com/zilliztech/milvus-operator/tree/main/config/samples
-    - name: 'Official Website:'
-      value: >-
-        https://milvus.io
-    - name: 'Documentation:'
-      value: >-
-        https://milvus.io/docs/install_standalone-operator.md
+  - name: 'Github Repository:'
+    value: >-
+      https://github.com/zilliztech/milvus-operator
+  - name: 'Manifests example folder:'
+    value: >-
+      https://github.com/zilliztech/milvus-operator/tree/main/config/samples
+  - name: 'Official Website:'
+    value: >-
+      https://milvus.io
+  - name: 'Documentation:'
+    value: >-
+      https://milvus.io/docs/install_standalone-operator.md
   retry:
     limit: 5
     backoff:

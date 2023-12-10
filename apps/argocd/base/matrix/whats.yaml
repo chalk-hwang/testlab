@@ -3,11 +3,11 @@ kind: Application
 metadata:
   name: whatsapp-bridge
   finalizers:
-    - resources-finalizer.argocd.argoproj.io
+  - resources-finalizer.argocd.argoproj.io
 spec:
   project: matrix
   source:
-    repoURL: 'https://github.com/gruberdev/homelab.git'
+    repoURL: 'https://github.com/chalk-hwang/testlab.git'
     path: apps/matrix/bridges/whatsapp
     targetRevision: main
   destination:

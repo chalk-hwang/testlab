@@ -3,11 +3,11 @@ kind: Application
 metadata:
   name: golinks
   finalizers:
-    - resources-finalizer.argocd.argoproj.io
+  - resources-finalizer.argocd.argoproj.io
 spec:
   project: networking
   source:
-    repoURL: 'https://github.com/gruberdev/homelab.git'
+    repoURL: 'https://github.com/chalk-hwang/testlab.git'
     path: apps/networking/tailscale/golink
     targetRevision: main
   destination:

@@ -3,11 +3,11 @@ kind: Application
 metadata:
   name: gitea-utils
   finalizers:
-    - resources-finalizer.argocd.argoproj.io
+  - resources-finalizer.argocd.argoproj.io
 spec:
   project: apps
   source:
-    repoURL: 'https://github.com/gruberdev/homelab.git'
+    repoURL: 'https://github.com/chalk-hwang/testlab.git'
     path: apps/services/gitea
     targetRevision: main
   destination:
